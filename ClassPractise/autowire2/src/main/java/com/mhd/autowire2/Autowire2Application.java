@@ -15,7 +15,7 @@ public class Autowire2Application {
         ConfigurableApplicationContext context1 = SpringApplication.run(Autowire2Application.class, args);
 
         System.out.println("Autowired example started.....");
-        Student std=context1.getBean(Student.class);
+        Student std = context1.getBean(Student.class);
         std.showDetails();
         System.out.println("Autowired example ended.....");
 

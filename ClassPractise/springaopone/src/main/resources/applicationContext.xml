@@ -10,12 +10,9 @@
     </bean>
 
 
-
     <bean class="com.mhd.springaopone.DoAdviceBeforeMethod" id="doAdviceBeforeMethodBean"/>
     <bean class="com.mhd.springaopone.DoAdviceAfterMethod" id="adviceAfterMethodBean"/>
     <bean class="com.mhd.springaopone.DoAfterThowingException" id="doAfterThrowingExceptionBean"/>
-
-
 
 
     <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="proxyFactoryBean">

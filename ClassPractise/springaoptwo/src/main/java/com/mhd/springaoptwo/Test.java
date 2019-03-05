@@ -10,17 +10,17 @@ public class Test {
         simpleService.printNameId();
         System.out.println("-------------\n");
         System.out.println("------this method  do not get any exception so it execute simuteniously, no exception msg will not show, but the doAfterAdvice msg will show as the methods executes-------");
-        try{
+        try {
             simpleService.checkName();
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println("Employee: Method checkName() exception thrown.......");
         }
         System.out.println("------------------------------\n");
 
         System.out.println("--------------This method may have exception so the DoAdviceAfterMethod message will not show----------------");
-        try{
+        try {
             simpleService.checkMsg();
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println("Employee: Method checkMsg() exception thrown.......");
         }
         System.out.println("-------------------\n");

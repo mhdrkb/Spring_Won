@@ -44,11 +44,12 @@ public class StudentController {
         }
         return list;
     }
+
     @GetMapping(value = "/report2")
-    public   Map<String,Long> getReport2(){
-        Map<String,Long> maps=new HashMap<>();
-        for(StudentDTO studentDTO : studentService.getAll()){
-            maps.put(studentDTO.getEmail(),studentService.countNoOfStudent(studentDTO.getEmail()));
+    public Map<String, Long> getReport2() {
+        Map<String, Long> maps = new HashMap<>();
+        for (StudentDTO studentDTO : studentService.getAll()) {
+            maps.put(studentDTO.getEmail(), studentService.countNoOfStudent(studentDTO.getEmail()));
         }
         return maps;
     }

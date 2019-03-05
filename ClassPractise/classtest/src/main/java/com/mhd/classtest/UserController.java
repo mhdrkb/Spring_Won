@@ -28,15 +28,16 @@ public class UserController {
         model.addAttribute("roleList", this.roleRepo.findAll());
         return "add-page";
     }
+
     @PostMapping("/add-user")
-    public String addUser(@Valid User user, BindingResult bindingResult, Model model){
-        if (bindingResult.hasErrors()){
+    public String addUser(@Valid User user, BindingResult bindingResult, Model model) {
+        if (bindingResult.hasErrors()) {
             return "add-page";
-        }else {
+        } else {
             this.userRepo.save(user);
-            model.addAttribute("user",new User());
+            model.addAttribute("user", new User());
             model.addAttribute("roleList", this.roleRepo.findAll());
-            model.addAttribute("successMsg","Congrtulations ..! Successfully saved data");
+            model.addAttribute("successMsg", "Congrtulations ..! Successfully saved data");
         }
         return "add-page";
     }

@@ -69,7 +69,7 @@ public class HomeController {
 
     @GetMapping(value = "/addUser")
     public List<User> addUserToList() {
-        list.add(new User(4L,"JHgdjfhs","89798463135462"));
+        list.add(new User(4L, "JHgdjfhs", "89798463135462"));
         return list;
     }
 
@@ -78,7 +78,7 @@ public class HomeController {
     @GetMapping(value = "/add/{userName}/{mobile}")
     public List<User> addUserToListDynamically(@PathVariable("userName") String username, @PathVariable("mobile") String m) {
         id++;
-        list.add(new User(id,username,m));
+        list.add(new User(id, username, m));
         return list;
     }
 

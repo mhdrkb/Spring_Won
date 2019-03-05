@@ -22,7 +22,7 @@ public class Student implements Serializable {
     private Long id;
 
     @NotNull
-    @Size(min = 1 , max = 50, message = "between 2 to 50 characters")
+    @Size(min = 1, max = 50, message = "between 2 to 50 characters")
     private String name;
 
     @NotNull
@@ -50,7 +50,7 @@ public class Student implements Serializable {
     @LastModifiedDate
     @Temporal(TemporalType.TIMESTAMP)
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-    private  Date lastMOdifiedDate = new Date();
+    private Date lastMOdifiedDate = new Date();
 
     @Temporal(TemporalType.DATE)
     @DateTimeFormat(pattern = "yyyy-MM-dd")
@@ -126,7 +126,6 @@ public class Student implements Serializable {
     }
 
 
-
     public Date getRegiDate() {
         return regiDate;
     }
@@ -153,7 +152,7 @@ public class Student implements Serializable {
 
     private Long fileSize;
     private String fileName;
-    private  String filePath;
+    private String filePath;
     private String fileExtesion;
 
     public Student(@NotNull @Size(min = 1, max = 50, message = "between 2 to 50 characters") String name, @NotNull @Email(message = "Enter a valid Email") String email, @NotNull String phone, @NotNull @Min(value = 20, message = "age must be at least 20") byte age, String gender, String[] courseCompleted, String round, Date regiDate, Date lastMOdifiedDate, Date birthDate, Long fileSize, String fileName, String filePath, String fileExtesion) {
@@ -258,7 +257,7 @@ public class Student implements Serializable {
     //in many to many relation we need a 3rd party table
 
     @ManyToMany(fetch = FetchType.EAGER) //many to many relation ofcourse between table to table not with coulmn
-    @JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id"),inverseJoinColumns = @JoinColumn(name = "role_id"))
+    @JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
     private Set<Role> roles; //set used so that it can not be duplicate
 
     public Set<Role> getRoles() {

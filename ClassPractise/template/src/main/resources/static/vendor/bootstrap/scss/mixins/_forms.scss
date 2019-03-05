@@ -25,7 +25,6 @@
   }
 }
 
-
 @mixin form-validation-state($state, $color, $icon) {
   .#{$state}-feedback {
     display: none;
@@ -107,7 +106,6 @@
       }
     }
   }
-
 
   .form-control-file {
     .was-validated &:#{$state},

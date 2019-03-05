@@ -13,21 +13,21 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class LoginController {
 
 
-//    @GetMapping(value = {"/", "/login"})
+    //    @GetMapping(value = {"/", "/login"})
 //    public String index(){
 //        return "login";
 //    }
-    @RequestMapping(value = {"/login","/"}, method = RequestMethod.GET)
-    public String login(){
+    @RequestMapping(value = {"/login", "/"}, method = RequestMethod.GET)
+    public String login() {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-        if (!(authentication instanceof AnonymousAuthenticationToken)){
+        if (!(authentication instanceof AnonymousAuthenticationToken)) {
             return "redirect:/sec";
         }
         return "public/login";
     }
 
     @GetMapping(value = "/access-denied")
-    public String accessDenied(){
+    public String accessDenied() {
         return "access-denied";
     }
 

@@ -17,7 +17,7 @@ public class User {
     private Long id;
 
     @NotNull
-    @Size(min = 2 , max = 30, message = "Hey, Size must me between 2 to 30")
+    @Size(min = 2, max = 30, message = "Hey, Size must me between 2 to 30")
     private String name;
 
     @Min(value = 18, message = "Hey , minimum age is 18")
@@ -64,12 +64,15 @@ public class User {
     public void setAge(byte age) {
         this.age = age;
     }
+
     public String getEmail() {
         return email;
     }
+
     public void setEmail(String email) {
         this.email = email;
     }
+
     public User(@NotNull @Size(min = 2, max = 30) String name, @Min(value = 18, message = "Hey , minimum age is 18") byte age, @NotNull @Email(message = "Enter an email") String email) {
         this.name = name;
         this.age = age;

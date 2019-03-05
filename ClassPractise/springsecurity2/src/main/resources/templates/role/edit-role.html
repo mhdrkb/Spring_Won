@@ -4,28 +4,31 @@
 <head>
     <title>Form</title>
     <style type="text/css">
-        .err{
+        .err {
             color: red;
         }
-        .succes{
-            color:green;
+
+        .succes {
+            color: green;
         }
     </style>
 </head>
 <body>
 
-<form  th:action="@{/role/edit-role/} + ${id}" th:object="${role}" method="post" >
+<form th:action="@{/role/edit-role/} + ${id}" th:object="${role}" method="post">
     <table>
-        <input type="hidden" th:field="*{id}" />
+        <input type="hidden" th:field="*{id}"/>
         <tr>
             <td>Name:</td>
-            <td><input type="text" th:field="*{roleName}" /></td>
+            <td><input type="text" th:field="*{roleName}"/></td>
 
             <span th:class="err" th:text="${existMsg}"></span>
         </tr>
 
         <tr>
-            <td><button type="submit" >Save</button></td>
+            <td>
+                <button type="submit">Save</button>
+            </td>
         </tr>
     </table>
 </form>

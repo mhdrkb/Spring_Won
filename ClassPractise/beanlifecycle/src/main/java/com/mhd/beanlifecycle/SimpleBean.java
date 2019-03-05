@@ -9,6 +9,7 @@ public class SimpleBean {
     public void setName(String name) {
         this.name = name;
     }
+
     public void setAge(int age) {
         this.age = age;
     }
@@ -23,13 +24,13 @@ public class SimpleBean {
     }
 
 
-    public void init(){
+    public void init() {
         System.out.println("Initializing Bean");
-        if(name==null){
+        if (name == null) {
             System.out.println("Using Default name");
-            name=DEFAULT_NAME;
+            name = DEFAULT_NAME;
         }
-        if(age==Integer.MIN_VALUE){
+        if (age == Integer.MIN_VALUE) {
             throw new IllegalArgumentException("You must set the age property");
         }
     }

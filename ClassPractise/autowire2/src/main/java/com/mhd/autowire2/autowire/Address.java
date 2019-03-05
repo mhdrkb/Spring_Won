@@ -27,7 +27,7 @@ public class Address {
         this.country = country;
     }
 
-    public void show(){
+    public void show() {
         System.out.println("Showwwwwwwwwww....................");
     }
 }

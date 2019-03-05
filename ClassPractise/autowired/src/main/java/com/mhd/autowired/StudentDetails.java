@@ -9,6 +9,7 @@ public class StudentDetails {
 
     @Autowired
     private Student student;
+
     public void callStudentmethod() {
         student.display();
     }

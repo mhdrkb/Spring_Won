@@ -28,7 +28,7 @@ public class RoleController {
                 Role role1 = this.roleRepo.findByRoleName(role.getRoleName());
                 if (role1 != null) {
                     model.addAttribute("existMsg", "Role name already exist");
-                }else{
+                } else {
                     this.roleRepo.save(role);
                     model.addAttribute("role", new Role());
                     model.addAttribute("successMsg", "Successfully saved data");
@@ -40,7 +40,7 @@ public class RoleController {
     }
 
     @GetMapping(value = "/role-list")
-    public String roleList(Model model){
+    public String roleList(Model model) {
         model.addAttribute("list", this.roleRepo.findAll());
         return "role/list";
     }

@@ -17,7 +17,6 @@ public class RoleController {
     private RoleRepo roleRepo;
 
 
-
     @GetMapping(value = "/role-list")
     public String roleHome(Model model) {
         model.addAttribute("rolelist", this.roleRepo.findAll());
@@ -25,21 +24,21 @@ public class RoleController {
     }
 
 
-
     @GetMapping("/add-role")
     public String role(Role role) {
         return "role/add-role";
     }
+
     @PostMapping("/add-role")
     public String saveRole(@Valid Role role, BindingResult bindingResult, Model model) {
         if (bindingResult.hasErrors()) {
             return "role/add-role";
         } else {
-            if(role != null){
+            if (role != null) {
                 Role role1 = this.roleRepo.findByRoleName(role.getRoleName());
-                if (role1 != null){
-                    model.addAttribute("existMsg","RoleName ALready Exist");
-                }else{
+                if (role1 != null) {
+                    model.addAttribute("existMsg", "RoleName ALready Exist");
+                } else {
                     this.roleRepo.save(role);
                     model.addAttribute("role", new Role()); //to clear the form after successfully reloading
                     model.addAttribute("successMsg", "Congratulations you have successfully saved Role data....");
@@ -48,8 +47,6 @@ public class RoleController {
         }
         return "role/add-role";
     }
-
-
 
 
 //    @GetMapping(value = "/roleDel/{id}")
@@ -61,36 +58,34 @@ public class RoleController {
 //    }
 
 
-
-
-
     @GetMapping("/edit-role/{id}")
-    public String editView( @PathVariable("id") Long id,Model model) {
+    public String editView(@PathVariable("id") Long id, Model model) {
         model.addAttribute("role", this.roleRepo.getOne(id));
         return "role/edit-role";
     }
+
     @PostMapping("/edit-role/{id}")
     public String edit(@Valid Role role, BindingResult bindingResult, Model model, @PathVariable("id") Long id) {
         if (bindingResult.hasErrors()) {
             return "role/edit-role";
-        }else{
-            if (role != null){
+        } else {
+            if (role != null) {
                 Role role2 = this.roleRepo.findByRoleName(role.getRoleName());
-                if (role2 != null){
-                    model.addAttribute("existMsg","RoleName Already Exist");
+                if (role2 != null) {
+                    model.addAttribute("existMsg", "RoleName Already Exist");
                     return "role/edit-role";
-                }else {
+                } else {
                     this.roleRepo.save(role);
-                    model.addAttribute("role",new Role());
-                    model.addAttribute("successMsg","Successfully saved Role data");
+                    model.addAttribute("role", new Role());
+                    model.addAttribute("successMsg", "Successfully saved Role data");
                 }
             }
         }
         return "redirect:/role-list";
     }
 
-@RequestMapping(value = "/role-del/{id}",method = RequestMethod.GET)
-    public String delRole(@PathVariable("id") Long id){
+    @RequestMapping(value = "/role-del/{id}", method = RequestMethod.GET)
+    public String delRole(@PathVariable("id") Long id) {
         this.roleRepo.deleteById(id);
         return "redirect:/role-list";
 

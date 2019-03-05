@@ -4,7 +4,7 @@ import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
 public class Employee {
-    private  long id;
+    private long id;
     private String position;
 
     public void setId(long id) {
@@ -22,12 +22,14 @@ public class Employee {
                 ", position='" + position + '\'' +
                 '}';
     }
+
     @PostConstruct
-    void initIt(){
+    void initIt() {
         System.out.println("I am initilized...");
     }
+
     @PreDestroy
-    void cleanUp(){
+    void cleanUp() {
         System.out.println("I am destroyed....");
     }
 }

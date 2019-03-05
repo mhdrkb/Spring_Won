@@ -13,7 +13,7 @@ public class Test {
         Address address = (Address) factory.getBean("address"); //inside the getBean that is bean id of the xml class
         System.out.println(address);
 
-        Student std= (Student) factory.getBean("student");
+        Student std = (Student) factory.getBean("student");
         System.out.println(std);
     }
 }

@@ -48,7 +48,7 @@ public class StudentController {
 
     @GetMapping("/add")
     public String showForm(Student student, Model model) {
-        model.addAttribute("roleList",this.roleRepo.findAll());
+        model.addAttribute("roleList", this.roleRepo.findAll());
         return "add-page";
     }
 
@@ -77,7 +77,7 @@ public class StudentController {
                 e.printStackTrace();
             }
         }
-        model.addAttribute("roleList",this.roleRepo.findAll());
+        model.addAttribute("roleList", this.roleRepo.findAll());
         return "add-page";
     }
 

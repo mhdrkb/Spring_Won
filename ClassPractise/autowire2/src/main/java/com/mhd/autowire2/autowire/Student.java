@@ -33,7 +33,8 @@ public class Student {
     public void setAddress(Address address) {
         this.address = address;
     }
-    public void showDetails(){
+
+    public void showDetails() {
         this.address.show();
     }
 }

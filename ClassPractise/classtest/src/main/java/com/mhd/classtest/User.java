@@ -23,7 +23,7 @@ public class User implements Serializable {
 
     @NotNull
     @Size(min = 11, max = 11, message = "hey 11 digits only")
-    @Column(name = "mobile" , unique = true)
+    @Column(name = "mobile", unique = true)
     private String mobile;
 
     @ManyToMany(fetch = FetchType.EAGER)
@@ -32,7 +32,6 @@ public class User implements Serializable {
             joinColumns = @JoinColumn(name = "u_id"),
             inverseJoinColumns = @JoinColumn(name = "r_id"))
     private Set<Role> roles;
-
 
 
     public Long getId() {

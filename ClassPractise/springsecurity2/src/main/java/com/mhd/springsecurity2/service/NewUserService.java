@@ -14,13 +14,15 @@ public class NewUserService {
         this.newUserRepo = newUserRepo;
     }
 
-    public ConfirmEmailAddUser findByEmail(String email){
+    public ConfirmEmailAddUser findByEmail(String email) {
         return newUserRepo.findByEmail(email);
     }
-    public ConfirmEmailAddUser findByConfirmationToken(String confirmationToken){
+
+    public ConfirmEmailAddUser findByConfirmationToken(String confirmationToken) {
         return newUserRepo.findByConfirmationToken(confirmationToken);
     }
-    public  void saveNewUser(ConfirmEmailAddUser confirmEmailAddUser){
+
+    public void saveNewUser(ConfirmEmailAddUser confirmEmailAddUser) {
         newUserRepo.save(confirmEmailAddUser);
     }
 }

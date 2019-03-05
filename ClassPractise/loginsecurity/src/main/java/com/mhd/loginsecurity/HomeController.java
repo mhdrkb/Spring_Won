@@ -7,23 +7,27 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class HomeController {
 
     @GetMapping(value = {"/", "/login"})
-    public String index(){
+    public String index() {
         return "login";
     }
+
     @GetMapping("/user/u")
-    public String user(){
+    public String user() {
         return "user/user";
     }
+
     @GetMapping("/admin/h")
-    public String home(){
+    public String home() {
         return "admin/home";
     }
+
     @GetMapping("/public/r")
-    public String regi(){
+    public String regi() {
         return "public/regi";
     }
+
     @GetMapping("/secure/s")
-    public String secure(){
+    public String secure() {
         return "secure/service";
     }
 }

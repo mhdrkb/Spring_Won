@@ -21,7 +21,7 @@ public class HomeController {
     public ModelAndView index() {
         ModelAndView mv = new ModelAndView();
         //mv.addObject("title", "Home ! CompanyName Inc.");
-        mv.addObject("user",new User());
+        mv.addObject("user", new User());
         mv.setViewName("index");//as like your html file name
         return mv;
     }
@@ -29,7 +29,7 @@ public class HomeController {
     @PostMapping(value = "/")
     public ModelAndView aqdd(@Valid User user) {
         ModelAndView mv = new ModelAndView();
-        if(user.getName() != null){
+        if (user.getName() != null) {
             this.repo.save(user);
             mv.addObject("successMsg", "Succesfully saved");
             mv.addObject("user", new User());
