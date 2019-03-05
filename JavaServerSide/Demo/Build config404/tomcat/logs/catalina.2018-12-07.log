@@ -1,0 +1,52 @@
+07-Dec-2018 09:05:38.250 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/9.0.13
+07-Dec-2018 09:05:38.266 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 2 2018 14:27:55 UTC
+07-Dec-2018 09:05:38.281 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         9.0.13.0
+07-Dec-2018 09:05:38.281 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+07-Dec-2018 09:05:38.281 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+07-Dec-2018 09:05:38.281 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+07-Dec-2018 09:05:38.281 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_171\jre
+07-Dec-2018 09:05:38.281 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_171-b11
+07-Dec-2018 09:05:38.281 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-Dec-2018 09:05:38.281 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\R-37\JavaServerSide\tomcat
+07-Dec-2018 09:05:38.281 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\R-37\JavaServerSide\tomcat
+07-Dec-2018 09:05:38.281 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\R-37\JavaServerSide\tomcat\conf\logging.properties
+07-Dec-2018 09:05:38.281 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-Dec-2018 09:05:38.281 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+07-Dec-2018 09:05:38.281 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+07-Dec-2018 09:05:38.281 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+07-Dec-2018 09:05:38.281 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\R-37\JavaServerSide\tomcat
+07-Dec-2018 09:05:38.281 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\R-37\JavaServerSide\tomcat
+07-Dec-2018 09:05:38.281 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\R-37\JavaServerSide\tomcat\temp
+07-Dec-2018 09:05:38.281 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.18] using APR version [1.6.5].
+07-Dec-2018 09:05:38.281 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+07-Dec-2018 09:05:38.281 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+07-Dec-2018 09:05:38.281 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1  11 Sep 2018]
+07-Dec-2018 09:05:39.703 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8081"]
+07-Dec-2018 09:05:39.828 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Dec-2018 09:05:39.859 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+07-Dec-2018 09:05:39.859 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Dec-2018 09:05:39.859 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2302 ms
+07-Dec-2018 09:05:40.125 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+07-Dec-2018 09:05:40.125 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/9.0.13
+07-Dec-2018 09:05:40.172 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\R-37\JavaServerSide\tomcat\webapps\docs]
+07-Dec-2018 09:05:40.917 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\R-37\JavaServerSide\tomcat\webapps\docs] has finished in [745] ms
+07-Dec-2018 09:05:40.933 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\R-37\JavaServerSide\tomcat\webapps\examples]
+07-Dec-2018 09:05:41.792 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Could not contact [localhost:8005] (base port [8005] and offset [0]). Tomcat may not be running.
+07-Dec-2018 09:05:42.292 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\R-37\JavaServerSide\tomcat\webapps\examples] has finished in [1,359] ms
+07-Dec-2018 09:05:42.292 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\R-37\JavaServerSide\tomcat\webapps\host-manager]
+07-Dec-2018 09:05:42.339 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\R-37\JavaServerSide\tomcat\webapps\host-manager] has finished in [47] ms
+07-Dec-2018 09:05:42.339 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\R-37\JavaServerSide\tomcat\webapps\manager]
+07-Dec-2018 09:05:42.371 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\R-37\JavaServerSide\tomcat\webapps\manager] has finished in [32] ms
+07-Dec-2018 09:05:42.371 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\R-37\JavaServerSide\tomcat\webapps\ROOT]
+07-Dec-2018 09:05:42.402 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\R-37\JavaServerSide\tomcat\webapps\ROOT] has finished in [31] ms
+07-Dec-2018 09:05:42.417 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8081"]
+07-Dec-2018 09:05:42.417 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+07-Dec-2018 09:05:42.433 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 2570 ms
+07-Dec-2018 09:05:49.522 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+07-Dec-2018 09:05:49.522 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8081"]
+07-Dec-2018 09:05:49.581 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+07-Dec-2018 09:05:49.618 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+07-Dec-2018 09:05:49.650 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8081"]
+07-Dec-2018 09:05:49.650 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+07-Dec-2018 09:05:49.650 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8081"]
+07-Dec-2018 09:05:49.650 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
