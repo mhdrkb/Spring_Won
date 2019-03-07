@@ -45,7 +45,7 @@ private PasswordEncoder passwordEncoder;
         roles.add(new Role(2L));
 
       User user = new User("Md.","R","sadmin","admin@pms.com",new Date(),true,UUID.randomUUID().toString(),roles);
-        user.setPassword(passwordEncoder.encode("1234456789"));
+        user.setPassword(passwordEncoder.encode("123456789"));
       repo.save(user);
       return "success";
     }

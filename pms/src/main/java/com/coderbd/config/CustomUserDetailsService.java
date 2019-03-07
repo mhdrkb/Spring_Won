@@ -22,9 +22,7 @@ public class CustomUserDetailsService implements UserDetailsService {
     public UserDetails loadUserByUsername(String usernameOrEmail) throws UsernameNotFoundException {
         // Let Visitor login with either username or email
         Optional<User> optionalUsers = userRepo.findByUserNameOrEmail(usernameOrEmail, usernameOrEmail);
-        optionalUsers
-                .orElseThrow(() -> new UsernameNotFoundException("Username not found"));
-        return optionalUsers
-                .map(CustomUserDetails::new).get();
+        optionalUsers.orElseThrow(() -> new UsernameNotFoundException("Username not found"));
+        return optionalUsers.map(CustomUserDetails::new).get();
     }
 }

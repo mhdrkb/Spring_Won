@@ -44,7 +44,7 @@ public class LoginController {
 
     @Autowired
     private PasswordEncoder passwordEncoder;
-    private static String USER_NAME = "rajaul.cse";  // GMail user name (just the part before "@gmail.com")
+    private static String USER_NAME = "mhdrkb91";  // GMail user name (just the part before "@gmail.com")
     private static String PASSWORD = ""; // GMail password
 
     @RequestMapping(value = {"/login"}, method = RequestMethod.GET)
